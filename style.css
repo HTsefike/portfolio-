@@ -233,4 +233,19 @@ span{color:#b0e0e6;}
         width: 70vw;
         margin-top: 4rem;
     }
+    
+}
+
+.projects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.project {
+    text-align: center;
+}
+.project img {
+    max-width: 300px;
+    border-radius: 10px;
 }

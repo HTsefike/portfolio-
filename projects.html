@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Projects</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<body>
+    <header>
+        <div class="Logo"> <img class="header-img" src="HTSEFIKE.png"></div>
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="#" class="active">Projects</a>
+        <a href="#">Skills</a>
+        <a href="#">Education</a>
+        <a href="#">Experience</a>
+        <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="projects-gallery">
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="path-to-project1-image.jpg" alt="Project 1">
+            <p>Project 1 Description</p>
+        </div>
+        <div class="project">
+            <img src="path-to-project2-image.jpg" alt="Project 2">
+            <p>Project 2 Description</p>
+        </div>
+    </section>
+    <section class="language-graph">
+        <h2>Programming Languages Used</h2>
+        <canvas id="languageChart"></canvas>
+    </section>
+    
+</body>
+<script>
+    const ctx = document.getElementById('languageChart').getContext('2d');
+    const languageChart = new Chart(ctx, {
+        type: 'pie', // You can also use 'bar' or 'doughnut'
+        data: {
+            labels: ['Python', 'Java', 'HTML', 'CSS', 'JavaScript'], // Update as needed
+            datasets: [{
+                label: 'Languages',
+                data: [30, 25, 20, 15, 10], // Update with your data
+                backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#F3FF33', '#FF33A1']
+            }]
+        },
+        options: {
+            responsive: true
+        }
+    });
+</script>
+
+</html>
