@@ -77,6 +77,16 @@ a{ color: inherit; }
     height: 100%;
     object-fit: cover;
 }
+.profile-photo.avatar-initials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, rgba(69, 232, 196, 0.18), rgba(69, 232, 196, 0.04));
+    font-size: 4.4rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.1rem;
+}
 
 .sidebar h1{
     font-size: 2.2rem;
@@ -188,6 +198,41 @@ section:last-child{ border-bottom: none; }
     justify-content: center;
     min-height: 100vh;
     padding-top: 4rem;
+    max-width: none;
+}
+.home-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.home-text{ flex: 1 1 50rem; max-width: 68rem; }
+
+.home-photo{
+    position: relative;
+    flex: 0 0 auto;
+    width: 30rem;
+    height: 36rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-photo-glow{
+    position: absolute;
+    inset: -4rem;
+    background: radial-gradient(circle, rgba(69, 232, 196, 0.35), rgba(69, 232, 196, 0.05) 60%, transparent 75%);
+    filter: blur(10px);
+    z-index: 0;
+}
+.home-photo img{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.6rem;
+    border: 3px solid var(--accent);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), 0 0 35px rgba(69, 232, 196, 0.25);
 }
 .home .eyebrow{
     font-size: 1.6rem;
@@ -461,6 +506,17 @@ footer{
 .project h4{ font-size: 1.8rem; margin-bottom: 0.6rem; }
 .project p{ font-size: 1.4rem; color: var(--text-muted); line-height: 1.6; }
 .project .tag-list{ margin-top: 1.2rem; }
+.project-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--accent);
+    transition: 0.25s ease;
+}
+.project-link:hover{ color: var(--text); transform: translateX(3px); }
 
 .gallery{
     display: grid;
@@ -517,4 +573,15 @@ footer{
         padding: 0 5% 5rem;
     }
     .home h1{ font-size: 3.6rem; }
+    .home-inner{
+        flex-direction: column-reverse;
+        gap: 3rem;
+        text-align: center;
+    }
+    .home-text{ max-width: 100%; }
+    .cta-group{ justify-content: center; }
+    .home-photo{
+        width: 22rem;
+        height: 26rem;
+    }
 }
