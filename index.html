@@ -3,40 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Happiness Thabisa Sefike - Test Automation & QA Engineer, Software Engineer and Photographer, based in Johannesburg, South Africa.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>HTSEFIKE Portfolio</title>
+    <title>Happiness Sefike | Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="Logo"> <img class="header-img" src="HTSEFIKE.png"></div>
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-img">
-            <img src ="IMG-20211229-WA0019.jpg"alt="">
-        </div>
-        <div class="home-content">
-            <h1>Hello!, it's <span>Happiness Thabisa</span></h1>
-            <h3 class="typing-text">I'm a<span></span></h3>
-            <p>Happiness is a passionate software engineering student at WeThinkCode, specializing in various programming languages and tools such as Python, Java, HTML, SQL, JavaScript, C#, GitLab, and IntelliJ. Through my studies, I have developed strong teamwork and problem-solving skills.
+    <div class="layout">
+        <aside class="sidebar">
+            <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+            <div class="profile-photo avatar-initials" aria-hidden="true">HS</div>
+            <h1>Happiness Thabisa <span>Sefike</span></h1>
+            <div class="role">Test Automation &amp; QA Engineer</div>
+            <div class="location"><i class="fa-solid fa-location-dot"></i> Johannesburg, South Africa</div>
 
-                Outside of coding, I am an aspiring photographer, with beginner-level experience in photography and editing tools like Photoshop and Canva. I enjoy sharing my knowledge with others and have mentored high school students at Dlala Nje, as well as facilitated robotics workshops for Grade 10 learners through the Telkom Foundation in Mpumalanga.</p>
             <div class="social-icons">
-                <a href="#"><i class="fa4-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa4-brands fa-github"></i></a>
-                <a href="#"><i class="fa4-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa4-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/happiness-thabisa-sefike-11b78b220" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/king_t.i10/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:sefikethabisa@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+27746662787" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
             </div>
-            <a href="#" class="btn">Hire Me</a>
-        </div>
-    </section>
+
+            <nav class="side-nav" id="sideNav">
+                <a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+                <a href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</a>
+                <a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a>
+                <a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                <a href="#certifications"><i class="fa-solid fa-award"></i> Certifications</a>
+                <a href="projects.html"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+                <a href="#contact"><i class="fa-solid fa-address-card"></i> Contact</a>
+            </nav>
+
+            <a href="mailto:sefikethabisa@gmail.com" class="btn filled">Hire Me</a>
+        </aside>
+
+        <main class="main-content">
+            <section class="home" id="home">
+                <div class="home-inner">
+                    <div class="home-text">
+                        <div class="eyebrow">Hello, I'm</div>
+                        <h1>Happiness Thabisa <span>Sefike</span></h1>
+                        <h3 class="typing-text">I'm a <span class="typed-word"></span></h3>
+                        <p class="lead">
+                            Software developer and QA engineer with intermediate skills in Python and Java, hands-on
+                            experience in automated and API testing, and a foundation in cybersecurity from IBM. Energetic,
+                            detail-oriented, and always eager to learn &mdash; currently building test automation solutions
+                            as a GTA at BMW IT Hub South Africa.
+                        </p>
+                        <div class="cta-group">
+                            <a href="mailto:sefikethabisa@gmail.com" class="btn filled"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+                            <a href="#about" class="btn"><i class="fa-solid fa-arrow-down"></i> Learn More</a>
+                        </div>
+                    </div>
+                    <div class="home-photo">
+                        <div class="home-photo-glow"></div>
+                        <img src="IMG-20211229-WA0019.jpg" alt="Happiness Thabisa Sefike">
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <p class="section-subtitle">Test Automation | QA Engineer | Software Engineer | Public Speaker | Photographer</p>
+                <div class="about-text">
+                    <p>
+                        Happiness is a software developer and QA engineer with intermediate skills in Python and Java,
+                        as well as foundational knowledge of cybersecurity from IBM. Known for being energetic,
+                        enthusiastic, and detail-oriented, Happiness is always eager to learn and grow.
+                    </p>
+                    <p>
+                        With additional skills in HTML, CSS, beginner-level JavaScript, and C#, Happiness has gained
+                        experience through roles including a GTA position at BMW IT Hub South Africa, a QA Specialist
+                        role at Codeplex, five months with Pick n Pay, five months as a tech tutor with Dlala Nje, and
+                        seven months with Akili IT Services and the Cape Innovation and Technology Initiative (CiTi).
+                    </p>
+                    <div class="quote">
+                        &ldquo;Never stop moving; if you can't run, walk; if you can't walk, crawl. Just keep moving.&rdquo;
+                    </div>
+                </div>
+                <div class="info-grid">
+                    <div><b>Name:</b> Happiness Thabisa Sefike</div>
+                    <div><b>Location:</b> Johannesburg, Gauteng, South Africa</div>
+                    <div><b>Email:</b> sefikethabisa@gmail.com</div>
+                    <div><b>Phone:</b> +27 74 666 2787</div>
+                    <div><b>Current Role:</b> GTA, BMW IT Hub South Africa</div>
+                    <div><b>Interests:</b> Karate, Photography, Public Speaking</div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2 class="section-title">My <span>Skills</span></h2>
+                <p class="section-subtitle">Tools and technologies I work with</p>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3><i class="fa-solid fa-vial"></i> QA &amp; Test Automation</h3>
+                        <div class="tag-list">
+                            <span class="tag">Karate Framework</span>
+                            <span class="tag">Automated Software Testing</span>
+                            <span class="tag">API Testing</span>
+                            <span class="tag">Selenium</span>
+                            <span class="tag">Cucumber</span>
+                            <span class="tag">Postman</span>
+                            <span class="tag">Swagger API</span>
+                            <span class="tag">Regression Testing</span>
+                            <span class="tag">Jira</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fa-solid fa-code"></i> Programming</h3>
+                        <div class="tag-list">
+                            <span class="tag">Python</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript (beginner)</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fa-solid fa-chart-line"></i> Data &amp; Productivity</h3>
+                        <div class="tag-list">
+                            <span class="tag">Data Visualization</span>
+                            <span class="tag">Excel Data Analysis</span>
+                            <span class="tag">Data Interpretation</span>
+                            <span class="tag">Microsoft Office</span>
+                            <span class="tag">SharePoint</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fa-solid fa-people-arrows"></i> Soft Skills</h3>
+                        <div class="tag-list">
+                            <span class="tag">Problem Solving</span>
+                            <span class="tag">Critical Thinking</span>
+                            <span class="tag">Teaching &amp; Mentoring</span>
+                            <span class="tag">Public Speaking</span>
+                            <span class="tag">Creativity</span>
+                            <span class="tag">Customer Satisfaction</span>
+                            <span class="tag">Karate</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2 class="section-title">Work <span>Experience</span></h2>
+                <p class="section-subtitle">My professional journey so far</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="tl-date">January 2026 &ndash; Present (10 mos)</div>
+                        <h3>GTA</h3>
+                        <div class="tl-org">BMW IT Hub South Africa &middot; Contract &middot; Pretoria, South Africa</div>
+                        <ul>
+                            <li>Builds and maintains automated test suites using the Karate framework.</li>
+                            <li>Performs API testing with Swagger, Postman and regression testing cycles.</li>
+                            <li>Works with Selenium, TypeScript, Cucumber and Jira in an Agile QA workflow.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-date">May 2025 &ndash; January 2026 (9 mos)</div>
+                        <h3>Quality Assurance Specialist</h3>
+                        <div class="tl-org">Codeplex &middot; Remote &middot; Cape Town, South Africa</div>
+                        <ul>
+                            <li>Performed manual and automated software testing using Postman and Microsoft Office tooling.</li>
+                            <li>Collaborated with developers to identify, log and track defects to resolution.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-date">September 2021 &ndash; February 2024 (2 yrs 6 mos)</div>
+                        <h3>Photographer</h3>
+                        <div class="tl-org">HT Sefike Media &middot; Self-employed &middot; Johannesburg, South Africa</div>
+                        <p>Took portrait and nature photography for clients, developing a strong eye for visual storytelling and presentation.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-date">May 2023 &ndash; September 2023 (5 mos)</div>
+                        <h3>Retail Shelfpacker / ASAP Team</h3>
+                        <div class="tl-org">Pick n Pay &middot; Bedfordview, South Africa</div>
+                        <ul>
+                            <li>Maintained shop shelves, ensuring they were always fully stocked, and assisted customers in locating products.</li>
+                            <li>Managed online customer orders as part of the ASAP team, ensuring accurate and timely packing.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-date">November 2022 &ndash; March 2023 (5 mos)</div>
+                        <h3>Programming Teacher (Volunteer Computer Instructor)</h3>
+                        <div class="tl-org">Dlala Nje &middot; Johannesburg, South Africa</div>
+                        <ul>
+                            <li>Taught after-school coding lessons to primary and high school students using the Scratch platform.</li>
+                            <li>Developed lesson plans suited to varied age groups and provided one-on-one support.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-date">March 2022 &ndash; September 2022 (7 mos)</div>
+                        <h3>Administrator</h3>
+                        <div class="tl-org">Akili IT Services &middot; Internship &middot; Midrand, South Africa</div>
+                        <p>Created intranets and provided SharePoint support &amp; maintenance.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-date">September 2021 &ndash; March 2022 (7 mos)</div>
+                        <h3>Digital Administrator</h3>
+                        <div class="tl-org">Cape Innovation and Technology Initiative (CiTi) &middot; Johannesburg, South Africa</div>
+                        <p>Analyzed and interpreted data in a digital administration capacity.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2 class="section-title">My <span>Education</span></h2>
+                <p class="section-subtitle">Academic background</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="tl-date">September 2023 &ndash; December 2024</div>
+                        <h3>WeThinkCode</h3>
+                        <div class="tl-org">Computer Science</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-date">March 2022 &ndash; November 2022</div>
+                        <h3>IIE Rosebank College</h3>
+                        <div class="tl-org">Diploma in Information Technology (incomplete) &middot; Software Development</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="tl-date">February 2017 &ndash; December 2020</div>
+                        <h3>New Model Private College</h3>
+                        <div class="tl-org">Matric &middot; Science Class</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certifications">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Continuous learning &amp; professional development</p>
+                <div class="cert-grid">
+                    <div class="cert-card"><i class="fa-solid fa-certificate"></i> De-Escalating Conversations for Customer Service</div>
+                    <div class="cert-card"><i class="fa-solid fa-certificate"></i> AWS Cloud Practitioner Essentials</div>
+                    <div class="cert-card"><i class="fa-solid fa-certificate"></i> Learning Data Visualization</div>
+                    <div class="cert-card"><i class="fa-solid fa-certificate"></i> Learning Excel: Data Analysis</div>
+                    <div class="cert-card"><i class="fa-solid fa-certificate"></i> API Test Automation</div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="section-subtitle">I'd love to hear from you &mdash; reach out any time</p>
+                <div class="contact-grid">
+                    <a href="tel:+27746662787" class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p>+27 74 666 2787</p>
+                    </a>
+                    <a href="mailto:sefikethabisa@gmail.com" class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>sefikethabisa@gmail.com</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/happiness-thabisa-sefike-11b78b220" target="_blank" rel="noopener" class="contact-card">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <h4>LinkedIn</h4>
+                        <p>happiness-thabisa-sefike</p>
+                    </a>
+                    <a href="https://www.instagram.com/king_t.i10/" target="_blank" rel="noopener" class="contact-card">
+                        <i class="fa-brands fa-instagram"></i>
+                        <h4>Instagram</h4>
+                        <p>@king_t.i10</p>
+                    </a>
+                </div>
+            </section>
+
+            <footer>&copy; 2026 Happiness Thabisa Sefike. All rights reserved.</footer>
+        </main>
+    </div>
+
+    <script>
+        // Mobile nav toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const sideNav = document.getElementById('sideNav');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => sideNav.classList.toggle('open'));
+        }
+
+        // Highlight active section link on scroll
+        const sections = document.querySelectorAll('main section[id]');
+        const navLinks = document.querySelectorAll('.side-nav a[href^="#"]');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const top = section.offsetTop - 150;
+                if (window.scrollY >= top) current = section.getAttribute('id');
+            });
+            navLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+            });
+        });
+    </script>
 </body>
 </html>

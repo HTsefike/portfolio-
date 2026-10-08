@@ -3,56 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects and photography by Happiness Thabisa Sefike.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Projects</title>
+    <title>Projects | Happiness Sefike</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <body>
-    <header>
-        <div class="Logo"> <img class="header-img" src="HTSEFIKE.png"></div>
-        <nav>
-        <a href="index.html">Home</a>
-        <a href="#" class="active">Projects</a>
-        <a href="#">Skills</a>
-        <a href="#">Education</a>
-        <a href="#">Experience</a>
-        <a href="#">Contact</a>
-        </nav>
-    </header>
-    <section class="projects-gallery">
-        <h2>My Projects</h2>
-        <div class="project">
-            <img src="path-to-project1-image.jpg" alt="Project 1">
-            <p>Project 1 Description</p>
-        </div>
-        <div class="project">
-            <img src="path-to-project2-image.jpg" alt="Project 2">
-            <p>Project 2 Description</p>
-        </div>
-    </section>
-    <section class="language-graph">
-        <h2>Programming Languages Used</h2>
-        <canvas id="languageChart"></canvas>
-    </section>
-    
-</body>
-<script>
-    const ctx = document.getElementById('languageChart').getContext('2d');
-    const languageChart = new Chart(ctx, {
-        type: 'pie', // You can also use 'bar' or 'doughnut'
-        data: {
-            labels: ['Python', 'Java', 'HTML', 'CSS', 'JavaScript'], // Update as needed
-            datasets: [{
-                label: 'Languages',
-                data: [30, 25, 20, 15, 10], // Update with your data
-                backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#F3FF33', '#FF33A1']
-            }]
-        },
-        options: {
-            responsive: true
-        }
-    });
-</script>
+    <div class="layout">
+        <aside class="sidebar">
+            <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+            <div class="profile-photo avatar-initials" aria-hidden="true">HS</div>
+            <h1>Happiness Thabisa <span>Sefike</span></h1>
+            <div class="role">Test Automation &amp; QA Engineer</div>
+            <div class="location"><i class="fa-solid fa-location-dot"></i> Johannesburg, South Africa</div>
 
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/happiness-thabisa-sefike-11b78b220" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/king_t.i10/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:sefikethabisa@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+27746662787" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            </div>
+
+            <nav class="side-nav" id="sideNav">
+                <a href="index.html#home"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="index.html#about"><i class="fa-solid fa-user"></i> About</a>
+                <a href="index.html#skills"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</a>
+                <a href="index.html#experience"><i class="fa-solid fa-briefcase"></i> Experience</a>
+                <a href="index.html#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                <a href="index.html#certifications"><i class="fa-solid fa-award"></i> Certifications</a>
+                <a href="projects.html" class="active"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+                <a href="index.html#contact"><i class="fa-solid fa-address-card"></i> Contact</a>
+            </nav>
+
+            <a href="mailto:sefikethabisa@gmail.com" class="btn filled">Hire Me</a>
+        </aside>
+
+        <main class="main-content">
+            <section id="projects" style="padding-top: 7rem;">
+                <h2 class="section-title">My <span>Projects</span></h2>
+                <p class="section-subtitle">A selection of things I've built and worked on</p>
+                <div class="projects-gallery">
+                    <div class="project">
+                        <img src="projects_pic/expense-tracker-printable.webp" alt="Expense Tracker project">
+                        <div class="project-body">
+                            <h4>Expense Tracker</h4>
+                            <p>A Flask-based personal finance tool for logging day-to-day expenses, categorizing transactions and staying on budget.</p>
+                            <div class="tag-list">
+                                <span class="tag">Python</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Data Analysis</span>
+                            </div>
+                            <a href="https://github.com/HTsefike/Expense-tracker" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="projects_pic/Math_programming_calc_figure_2_half_column_mobile.jpg" alt="Calculator project">
+                        <div class="project-body">
+                            <h4>Calculator</h4>
+                            <p>A Python command-line calculator built to practice core programming logic and functions, backed by its own test suite.</p>
+                            <div class="tag-list">
+                                <span class="tag">Python</span>
+                                <span class="tag">Problem Solving</span>
+                            </div>
+                            <a href="https://github.com/HTsefike/calculator" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="projects_pic/journal-diary-book.jpg" alt="Dairy secret diary app project">
+                        <div class="project-body">
+                            <h4>Dairy &mdash; Secret Diary App</h4>
+                            <p>A password-protected digital diary built in Java, letting users register, lock and securely keep their private entries.</p>
+                            <div class="tag-list">
+                                <span class="tag">Java</span>
+                                <span class="tag">Security</span>
+                            </div>
+                            <a href="https://github.com/HTsefike/Dairy" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="projects_pic/waiter-restaurant.jpg" alt="WaiterMate restaurant app project">
+                        <div class="project-body">
+                            <h4>WaiterMate</h4>
+                            <p>A terminal-based app that digitizes restaurant order-taking &mdash; waitstaff send orders straight to the kitchen and get notified when they're ready.</p>
+                            <div class="tag-list">
+                                <span class="tag">Python</span>
+                                <span class="tag">CLI</span>
+                            </div>
+                            <a href="https://github.com/HTsefike/waitermate" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="projects_pic/stock-market-chart.png" alt="Stock Tracking project">
+                        <div class="project-body">
+                            <h4>Stock Tracking</h4>
+                            <p>A tool for tracking stock prices and visualizing market movement over time.</p>
+                            <div class="tag-list">
+                                <span class="tag">Data Analysis</span>
+                                <span class="tag">Finance</span>
+                            </div>
+                            <a href="https://github.com/HTsefike/Stock-Tracking" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="projects_pic/forklift-warehouse.jpg" alt="Folklift Enquire project">
+                        <div class="project-body">
+                            <h4>Folklift Enquire</h4>
+                            <p>A warehouse/forklift enquiry website front end, built to practice structuring and styling multi-page sites.</p>
+                            <div class="tag-list">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                            <a href="https://github.com/HTsefike/Folklift-Enquire" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="HTSEFIKE.png" alt="Personal portfolio website">
+                        <div class="project-body">
+                            <h4>Personal Portfolio Website</h4>
+                            <p>This very site &mdash; a responsive portfolio built from scratch to showcase my QA, development and photography work.</p>
+                            <div class="tag-list">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <a href="https://github.com/HTsefike/tracker" target="_blank" rel="noopener" class="project-link">View on GitHub <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="language-graph">
+                <h2 class="section-title">Programming <span>Languages</span></h2>
+                <p class="section-subtitle">A rough breakdown of languages I use most</p>
+                <canvas id="languageChart" style="max-width: 480px;"></canvas>
+            </section>
+
+            <section id="photography">
+                <h2 class="section-title">Photography <span>Gallery</span></h2>
+                <p class="section-subtitle">Portraits &amp; nature photography from HT Sefike Media</p>
+                <div class="gallery">
+                    <img src="projects_pic/annie-spratt-r_m-JKJVto0-unsplash.jpg" alt="Photography sample 1">
+                    <img src="projects_pic/jakub-zerdzicki-heiYgqp0Tsk-unsplash.jpg" alt="Photography sample 2">
+                    <img src="projects_pic/tyler-prahm-lmV3gJSAgbo-unsplash.jpg" alt="Photography sample 3">
+                    <img src="ionela-mat--a8A-n-zqmk-unsplash.jpg" alt="Nature photography sample 4">
+                    <img src="ionela-mat-2WxnKStKQTs-unsplash.jpg" alt="Nature photography sample 5">
+                </div>
+            </section>
+
+            <footer>&copy; 2026 Happiness Thabisa Sefike. All rights reserved.</footer>
+        </main>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sideNav = document.getElementById('sideNav');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => sideNav.classList.toggle('open'));
+        }
+
+        const ctx = document.getElementById('languageChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Python', 'Java', 'TypeScript', 'HTML/CSS', 'C#'],
+                datasets: [{
+                    label: 'Languages',
+                    data: [30, 25, 20, 15, 10],
+                    backgroundColor: ['#45e8c4', '#22c7a3', '#9aa5b7', '#243049', '#e9edf3']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { labels: { color: '#e9edf3' } } }
+            }
+        });
+    </script>
+</body>
 </html>
