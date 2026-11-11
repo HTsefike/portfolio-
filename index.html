@@ -9,10 +9,16 @@
     <title>Happiness Sefike | Portfolio</title>
 </head>
 <body>
+    <div class="mobile-topbar">
+        <span class="mobile-logo">Happiness <span>Sefike</span></span>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
     <div class="layout">
-        <aside class="sidebar">
-            <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
-            <div class="profile-photo avatar-initials" aria-hidden="true">HS</div>
+        <aside class="sidebar" id="sidebar">
+            <div class="profile-photo">
+                <img src="IMG-20211229-WA0019.jpg" alt="Happiness Thabisa Sefike">
+            </div>
             <h1>Happiness Thabisa <span>Sefike</span></h1>
             <div class="role">Test Automation &amp; QA Engineer</div>
             <div class="location"><i class="fa-solid fa-location-dot"></i> Johannesburg, South Africa</div>
@@ -57,8 +63,9 @@
                         </div>
                     </div>
                     <div class="home-photo">
-                        <div class="home-photo-glow"></div>
-                        <img src="IMG-20211229-WA0019.jpg" alt="Happiness Thabisa Sefike">
+                        <div class="photo-frame">
+                            <img src="IMG-20211229-WA0019.jpg" alt="Happiness Thabisa Sefike">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -275,12 +282,30 @@
     </div>
 
     <script>
-        // Mobile nav toggle
+        // Mobile off-canvas sidebar toggle
         const menuToggle = document.getElementById('menuToggle');
-        const sideNav = document.getElementById('sideNav');
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => sideNav.classList.toggle('open'));
+        const sidebar = document.getElementById('sidebar');
+        const backdrop = document.getElementById('sidebarBackdrop');
+
+        function openSidebar() {
+            sidebar.classList.add('open');
+            backdrop.classList.add('open');
         }
+        function closeSidebar() {
+            sidebar.classList.remove('open');
+            backdrop.classList.remove('open');
+        }
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+            });
+        }
+        if (backdrop) {
+            backdrop.addEventListener('click', closeSidebar);
+        }
+        document.querySelectorAll('.side-nav a').forEach(link => {
+            link.addEventListener('click', closeSidebar);
+        });
 
         // Highlight active section link on scroll
         const sections = document.querySelectorAll('main section[id]');
