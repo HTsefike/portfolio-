@@ -10,9 +10,13 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <div class="mobile-topbar">
+        <span class="mobile-logo">Happiness <span>Sefike</span></span>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
     <div class="layout">
-        <aside class="sidebar">
-            <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+        <aside class="sidebar" id="sidebar">
             <div class="profile-photo">
                 <img src="IMG-20211229-WA0019.jpg" alt="Happiness Thabisa Sefike">
             </div>
@@ -44,32 +48,88 @@
         <main class="main-content">
             <section id="projects" style="padding-top: 7rem;">
                 <h2 class="section-title">My <span>Projects</span></h2>
-                <p class="section-subtitle">A selection of things I've built and worked on</p>
+                <p class="section-subtitle">A selection of real projects from my GitHub &mdash; <a href="https://github.com/HTsefike" target="_blank" rel="noopener" style="color: var(--accent);">github.com/HTsefike</a></p>
                 <div class="projects-gallery">
+
                     <div class="project">
-                        <img src="projects_pic/expense-tracker-printable.webp" alt="Expense Tracker project">
+                        <img src="projects_pic/fetched/folklift.png" alt="Folklift Enquire business website homepage">
                         <div class="project-body">
-                            <h4>Expense Tracker</h4>
-                            <p>A personal finance tool for logging day-to-day expenses, visualizing spending habits and staying on budget.</p>
+                            <h4>Folklift Enquire</h4>
+                            <p>A multi-page business website for an industrial forklift &amp; equipment supplier, with home, product and contact pages, built with a clean responsive layout.</p>
+                            <div class="tag-list">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Responsive Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/HTsefike/Folklift-Enquire" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="projects_pic/fetched/waitermate.png" alt="WaiterMate restaurant order app illustration">
+                        <div class="project-body">
+                            <h4>WaiterMate</h4>
+                            <p>A terminal-based restaurant order management system that lets waitstaff capture orders by table, send them digitally to the kitchen, and get notified when food is ready.</p>
                             <div class="tag-list">
                                 <span class="tag">Python</span>
-                                <span class="tag">Data Analysis</span>
+                                <span class="tag">CLI App</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/HTsefike/waitermate" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
                             </div>
                         </div>
                     </div>
+
                     <div class="project">
-                        <img src="projects_pic/Math_programming_calc_figure_2_half_column_mobile.jpg" alt="Programming calculator project">
+                        <img src="projects_pic/fetched/expense-tracker.png" alt="Expense tracker app illustration">
                         <div class="project-body">
-                            <h4>Programming Calculator</h4>
-                            <p>A calculator application built to practice core programming logic, functions and UI design.</p>
+                            <h4>Expense Tracker</h4>
+                            <p>A web-based personal finance tool with user accounts, categories and transactions, backed by a SQL database for storing and reporting on spending.</p>
+                            <div class="tag-list">
+                                <span class="tag">Python</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">SQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/HTsefike/Expense-tracker" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="projects_pic/fetched/dairy.png" alt="Secure digital diary app illustration">
+                        <div class="project-body">
+                            <h4>Dairy &mdash; Secure Digital Diary</h4>
+                            <p>A password-protected desktop journal application built with a Java GUI, so users can register, log in and keep their private entries locked away safely.</p>
                             <div class="tag-list">
                                 <span class="tag">Java</span>
-                                <span class="tag">Problem Solving</span>
+                                <span class="tag">Desktop GUI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/HTsefike/Dairy" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
                             </div>
                         </div>
                     </div>
+
                     <div class="project">
-                        <img src="HTSEFIKE.png" alt="Personal portfolio website">
+                        <img src="projects_pic/fetched/calculator.png" alt="Python calculator app illustration">
+                        <div class="project-body">
+                            <h4>Calculator</h4>
+                            <p>A Python calculator application built with an accompanying automated test suite &mdash; a small project focused on clean logic and verifying correctness.</p>
+                            <div class="tag-list">
+                                <span class="tag">Python</span>
+                                <span class="tag">Unit Testing</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/HTsefike/calculator" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="HTSEFIKE.png" alt="Personal portfolio website logo">
                         <div class="project-body">
                             <h4>Personal Portfolio Website</h4>
                             <p>This very site &mdash; a responsive portfolio built from scratch to showcase my QA, development and photography work.</p>
@@ -78,8 +138,12 @@
                                 <span class="tag">CSS</span>
                                 <span class="tag">JavaScript</span>
                             </div>
+                            <div class="project-links">
+                                <a href="https://github.com/HTsefike/portfolio-" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </section>
 
@@ -107,10 +171,28 @@
 
     <script>
         const menuToggle = document.getElementById('menuToggle');
-        const sideNav = document.getElementById('sideNav');
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => sideNav.classList.toggle('open'));
+        const sidebar = document.getElementById('sidebar');
+        const backdrop = document.getElementById('sidebarBackdrop');
+
+        function openSidebar() {
+            sidebar.classList.add('open');
+            backdrop.classList.add('open');
         }
+        function closeSidebar() {
+            sidebar.classList.remove('open');
+            backdrop.classList.remove('open');
+        }
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+            });
+        }
+        if (backdrop) {
+            backdrop.addEventListener('click', closeSidebar);
+        }
+        document.querySelectorAll('.side-nav a').forEach(link => {
+            link.addEventListener('click', closeSidebar);
+        });
 
         const ctx = document.getElementById('languageChart').getContext('2d');
         new Chart(ctx, {
